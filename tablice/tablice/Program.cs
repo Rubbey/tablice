@@ -42,9 +42,39 @@ namespace tablice
             {
                 Console.WriteLine(element);
             }
+            Console.WriteLine();
 
 
+            // deklaracja i ustalanie wielkości tablicy przez użytkownika
 
+            
+            bool test = true;
+            int tabSize = 0;
+            while (test)
+            {
+                Console.Write("Podaj wielkość tablicy: ");
+                try
+                {
+                   tabSize = int.Parse(Console.ReadLine());
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("To nie jest prawidłowa wartość!");
+                    continue;
+                }
+                break;
+            }
+            int[] tab4 = new int[tabSize];
+
+            for (int i = 0; i < tab4.Length; i++)
+            {
+                tab4[i] = i*3;
+            }
+            foreach (int element in tab4)
+            {
+                Console.WriteLine(element);
+            }
+            Console.WriteLine();
 
 
 
