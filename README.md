@@ -1,0 +1,2 @@
+# tablice
+ćwiczenia z tablic
