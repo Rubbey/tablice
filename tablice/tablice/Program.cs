@@ -70,9 +70,9 @@ namespace tablice
             {
                 tab4[i] = i*3;
             }
-            foreach (int element in tab4)
+            for (int i = 0; i < tab4.Length; i++)
             {
-                Console.WriteLine(element);
+                Console.WriteLine("{0} element tablicy ma wartość: {1}",i+1, tab4[i]);
             }
             Console.WriteLine();
 
